@@ -24,6 +24,13 @@ class BASICNAV extends HTMLElement {
         const iconhw = logodim.split(',');
         root.style.setProperty('--h',iconhw[0]);
         root.style.setProperty('--w',iconhw[1]);
+        const mob = this.getAttribute('mobileicon');
+        const mobicon = mob.split(',');
+        const openmob = `url("${mobicon[0]}")`;
+        const closemob = `url("${mobicon[1]}")`;
+        root.style.setProperty('--getopenimg',openmob);
+        root.style.setProperty('--getcloseimg',closemob);
+        
         for (var i = 0; i < lenofpage; i++) {
             sec += `<li><a href="${arraylinksdata[i]}">${arraypagedata[i]}</a></li>`;
         }
