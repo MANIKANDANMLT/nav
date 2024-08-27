@@ -1,3 +1,11 @@
+![version](https://img.shields.io/badge/version-1.0.0-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+![creator](https://img.shields.io/badge/creator-ManikandanSrinivasalu-yellow)
+![co-developer](https://img.shields.io/badge/creator-Sneha.M-red)
+![language](https://img.shields.io/badge/language-html,css,js-purple)
+
+![usage](https://img.shields.io/badge/usage-OpenSource-white)
+![phase](https://img.shields.io/badge/phase-development-orange)
 # Welcome to NAV 
 <div style="display:flex;">
 <img src="sampleimages/nav.jfif" height=100 style="margin-right:10px;">
@@ -290,3 +298,4 @@ slide nav provides the classic website navigation of sliding effect
     direction="left">
   </slide-nav>
 ```
+thank you!
