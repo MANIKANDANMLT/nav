@@ -46,6 +46,7 @@ A very basic navbar designed with customization
 | links  | links for the page(url or.html or file) |
 | sticky  | navbar sticks to page on scroll if true else sticky="" |
 | transparent | transparent bar that adopts page color|
+| mobileicon | image1,image2 (for open and close) |
 ### code sample of basic-nav
 
 ```html
@@ -57,7 +58,9 @@ A very basic navbar designed with customization
     menustyle="crimson,white,black"
     pages="home,about,contact,services,blog"
     links="link1.html,link2.html,link3.html,link4.html,link5.html"
-    sticky="true">
+    sticky="true"
+    mobileicon="images/hamburger.png,images/exit.png"
+>
 </basic-nav>
 ```
 
