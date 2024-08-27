@@ -12,6 +12,8 @@ Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-
   --fonthovercolor:black;
   --h:30px;
   --w:30px;
+--getopenimg:url('images/hamburger.png');
+  --getcloseimg:url('images/exit.png');
 }
 basic-nav nav {
   display: flex;
@@ -63,13 +65,12 @@ basic-nav nav .hamburger {
 }
 
 .hamburger-menu {
-  background-image: url('images/hamburger.png');
+  background-image: var(--getopenimg);
 }
 
 .exit-menu {
-  background-image: url('images/exit.png');
+  background-image: var(--getcloseimg)
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
   basic-nav nav ul {
