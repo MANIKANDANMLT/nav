@@ -19,12 +19,18 @@ co-developed by [SNEHA.M](https://www.linkedin.com/in/m-sneha-57b284228/)
 # NAV tags
 
 ## ! note 
-- don't forget to include CDN links of css and js
+- don't forget to include CDN links of css and js of the respective nav design
 - try to include all attributes for respective nav
 - some nav attributes can handle mutiple values seperated by comma( , ) eg: pages , __styles etc..
 - if you dont need any customization you can provide empty attributes eg: direction = ""
 ## basic-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basicnav/basicnav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basicnav/basicnav.js" defer></script>
+```
 <img src="sampleimages/basicnav.png">
 
 A very basic navbar designed with customization 
@@ -56,6 +62,13 @@ A very basic navbar designed with customization
 ```
 
 ## bubble-nav
+
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/bubblenav/bubblenav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/bubblenav/bubblenav.js" defer></script>
+```
 <img src="sampleimages/bubblenav.png">
 
 circular menus pops from corner 
@@ -98,6 +111,12 @@ bubble-nav can handle only upto "4" menu
 
 ## float-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/floatnav/floatnav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/floatnav/floatnav.js" defer></script>
+```
 <img src="sampleimages/floatnav.png">
 
 float nav is like floating icon button which can hold upto 6 menu
@@ -134,6 +153,12 @@ the side of the icon and position can also be changed but not the menus
 
 ## halfslide-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/halfslidenav/halfslide.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/halfslidenav/halfslide.js" defer></script>
+```
 <img src="sampleimages/halfslidenav.png">
 
 halfslide nav provides the classic website navigation of sliding effect
@@ -167,6 +192,12 @@ halfslide nav provides the classic website navigation of sliding effect
 
 ## hover-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/hovernav/hovernav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/hovernav/hovernav.js" defer></script>
+```
 <img src="sampleimages/hovernav.png">
 
 hover nav provides the classic website navigation of sliding effect
@@ -201,6 +232,12 @@ hover nav provides the classic website navigation of sliding effect
 
 ## pop-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/popnav/popnav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/popnav/popnav.js" defer></script>
+```
 <img src="sampleimages/popnav.png">
 
 pop nav is like a popup which can hold upto 6 menu
@@ -233,6 +270,12 @@ pop nav is like a popup which can hold upto 6 menu
 
 ## simple-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/simplenav/simplenav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/simplenav/simplenav.js" defer></script>
+```
 <img src="sampleimages/simplenav.png">
 
 simple nav is general nav with msg feature and icons 
@@ -268,6 +311,12 @@ simple nav is general nav with msg feature and icons
 
 ## slide-nav
 
+### CDN link
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/slidenav/slidenav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/slidenav/slidenav.js" defer></script>
+```
 <img src="sampleimages/slidenav.png">
 
 slide nav provides the classic website navigation of sliding effect
