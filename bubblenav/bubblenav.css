@@ -1,0 +1,136 @@
+/* bubble-nav */
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+    :root{
+      /* 00034e */
+      --mycolor:#00047c;
+      --hovercolor:#00047c;
+      --font: ;
+      --bubble1-x:1px;
+      --bubble1-y:150px;
+      --bubble2-x:70px;
+      --bubble2-y:125px;
+      --bubble3-x:120px;
+      --bubble3-y:70px;
+      --bubble4-x:150px;
+      --bubble4-y:1px;
+      --menucolor:aliceblue;
+      --menutext-color:rgb(31,31,31);
+      --bubbletext-color:aliceblue;
+      --menuborder:5px solid var(--mycolor);
+      --bubbleborder:3px solid var(--bubbletext-color);
+    }
+    .bubble .bubble-menu-button{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      height: 80px;
+      background-color: var(--menucolor);
+      border-top-left-radius: 100%;
+      border-top:var(--menuborder);
+      border-left:var(--menuborder);
+      color: var(--menutext-color);
+      padding: 40px 25px;
+     cursor: pointer;
+     user-select: none; 
+     font-size: 18px;
+     font-weight: bold;
+     box-shadow: -1px -1px 10px rgb(135, 134, 134);
+    font-family: var(--font);
+    }
+
+    .bubble .bubble-menu-items ul a{
+      text-decoration: none;
+      color: var(--bubbletext-color);
+      font-size: 16px;
+      font-family: var(--font);
+      user-select: none; 
+    }
+    .bubble .bubble-menu-items ul .bubble-first{
+      position: fixed;
+      bottom: var(--bubble1-y);
+      right: var(--bubble1-x);
+      width: 60px;
+      height: 60px;
+      background-color: var(--mycolor);
+      border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 32px;
+     border:var(--bubbleborder);
+     transition: ease-in-out;
+     display: none;
+     user-select: none; 
+    }
+    
+    .bubble .bubble-menu-items ul .bubble-first:hover, .bubble .bubble-menu-items ul .bubble-second:hover, .bubble .bubble-menu-items ul .bubble-third:hover, .bubble .bubble-menu-items ul .bubble-fourth:hover{
+      background-color: var(--hovercolor);
+      user-select: none; 
+    }
+    
+    .bubble .bubble-menu-items ul .bubble-second{
+      position: fixed;
+      bottom:var(--bubble2-y);
+      right: var(--bubble2-x);
+      width: 60px;
+      height: 60px;
+      background-color: var(--mycolor);
+      border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     user-select: none; 
+     font-size: 16px;
+     font-weight: bold;
+     padding: 32px;
+     border:var(--bubbleborder);
+     display: none;
+    }
+    .bubble .bubble-menu-items ul .bubble-third{
+      position: fixed;
+      bottom: var(--bubble3-y);
+      right: var(--bubble3-x);
+      width: 60px;
+      height: 60px;
+      background-color:var(--mycolor);
+      border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 32px;
+     border:var(--bubbleborder);
+     display: none;
+     user-select: none; 
+    }
+    .bubble .bubble-menu-items ul .bubble-fourth{
+      position: fixed;
+      bottom: var(--bubble4-y);
+      right:var(--bubble4-x);
+      width: 60px;
+      height: 60px;
+      background-color: var(--mycolor);
+      border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 32px;
+     border:var(--bubbleborder);
+     display: none;
+     user-select: none; 
+    }

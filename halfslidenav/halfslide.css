@@ -1,0 +1,66 @@
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --slidebg:#111;
+    --fontcolor:#ffffff;
+    --fonthovercolor:red;
+    --barbg:red;
+    --h:40px;
+    --w:40px;
+}
+.slideanim .slidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:var(--slidebg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .slideanim.right-slide .slidenav {
+    right: 0;
+    left: auto;
+  }
+  .slideanim .slidemenu {
+    cursor: pointer;
+    background-color: var(--barbg);
+  }
+  .slideanim .slidemenu img{
+    margin-left: 5px;
+    width: var(--w);
+    height: var(--h);
+  }
+  .slideanim .slidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--fontcolor);
+    display: block;
+    transition: 0.3s;
+  }
+  .slideanim .slidenav a:hover {
+    color: var(--fonthovercolor);
+  }
+  .slideanim .slidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .slideanim.right-slide .slidenav .closebtn {
+    right: 25px;
+  }
+  @media screen and (max-height: 450px) {
+    .slideanim .slidenav { padding-top: 15px; }
+    .slideanim .slidenav a { font-size: 18px; }
+  }

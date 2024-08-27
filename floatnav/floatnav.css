@@ -1,0 +1,121 @@
+/* floatnav */
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --menubtnborder:3px solid rgb(125, 125, 125);
+    --menubtncolor:bisque;
+    --menubtnradius:10%;
+    --fontcolor:white;
+    --fonthover:black;
+    --menubgcolor:#484748;
+    --menubghover:#636363;
+    --menubgactive:#aeaeae;
+    --menuradius:27px;
+    --x :10px;
+    --y :-10px;
+    --xpc:10px;
+    --ypc:-100px;
+}
+.floatnav .circleicon {
+    bottom: 0%;
+    margin-left: 35px;
+    margin-bottom:30px;
+    position: fixed;
+    cursor: pointer;
+    background-color: var(--menubtncolor);
+    border-radius: var(--menubtnradius);
+    padding: 10px;
+    border: var(--menubtnborder);
+    transform: translate(var(--xpc),var(--ypc));
+  }
+  
+  .floatnav .circleicon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .floatnav .downtab .up-content {
+    bottom: 10%;
+    position: fixed;
+    margin-top: 30px;
+    /* background-color: #8003a300; */
+    margin-left: 3px;
+    margin-bottom: 50px;
+    padding: 2px;
+    display: none;
+  }
+  
+  .floatnav .downtab .up-content a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--fontcolor);
+    display: block;
+    transition: 0.3s;
+    margin: 10px;
+    background-color: var(--menubgcolor);
+    border-radius:var(--menuradius);
+  }
+  
+  .floatnav .downtab .up-content a:hover {
+    background-color:var(--menubghover);
+    color:var(--fonthover);
+  }
+  
+  .floatnav .downtab .up-content a:active {
+    background-color: var(--menubgactive);
+  }
+  
+  /* Right side positioning */
+  .floatnav.right-side .circleicon {
+    right: 0;
+    left: auto;
+  }
+  
+  .floatnav.right-side .downtab .up-content {
+    right: 0;
+    left: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .floatnav .downtab .up-content a {
+      font-size: 16px;
+    }
+    .floatnav .circleicon {
+      bottom: 0%;
+      margin-left: 35px;
+      margin-bottom: 20px;
+      position: fixed;
+      cursor: pointer;
+      background-color: var(--menubtncolor);
+      border-radius: var(--menubtnradius);
+      padding: 8px;
+      border: var(--menubtnborder);
+      transform: translate(var(--x),var(--y));
+    }
+    .floatnav .downtab .up-content {
+      bottom: 5%;
+    }
+    .floatnav .circleicon img {
+      width: 22px;
+      height: 22px;
+    }
+    /* Adjust for right-side positioning on smaller screens */
+    .floatnav.right-side .circleicon {
+      right: 0;
+      left: auto;
+    }
+    .floatnav.right-side .downtab .up-content {
+      right: 0%;
+      left: auto;
+    }
+  }
+  

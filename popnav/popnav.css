@@ -1,0 +1,117 @@
+/* popnav */
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+   --menubgcolor :bisque;
+   --menubtncolor:bisque;
+   --menuhovercolor :#636363; 
+   --menuactivecolor:#797979;
+   --menubtnborder : 3px solid rgb(0, 0, 0);
+   --fontcolor:#ffffff;
+   --fontbgcolor:red;
+   --fonthovercolor:black;
+}
+.popnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .popnav .middleicon {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      bottom: 0%;
+      position: fixed;
+      cursor: pointer;
+      background-color: var(--menubtncolor);
+      border-radius: 150px 150px 0 0;
+      width: 100px;
+      padding: 0px 5px;
+      border: var(--menubtnborder);
+    }
+    .popnav .middleicon img {
+      width: 30px;
+      height: 30px;
+    }
+    .popnav .popnavtab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .popnav .popnavtab .middle-content {
+      bottom: 30%;
+      position: fixed;
+      background-color: var(--menubgcolor);
+      margin: 0 auto;
+      text-align: center;
+      display: none;
+      border-radius: 10px;
+    } 
+    .popnav .popnavtab .middle-content a {
+      display: block;
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--fontcolor);
+      transition: 0.3s;
+      margin: 10px;
+      background-color: var(--fontbgcolor);
+      border-radius: 8px;
+      /* float: right; */
+      align-items: center;
+    }
+    .popnav .popnavtab .middle-content a:hover{
+      background-color: var(--menuhovercolor);
+      color:var(--fonthovercolor);
+    }
+    .popnav .popnavtab .middle-content a:active{
+      background-color: var(--menuactivecolor);
+    }
+    @media screen and (max-width: 768px) {
+      .popnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        }
+      .popnav .popnavtab .middle-content a {
+        font-size: 16px;
+        margin: 10px 30px;
+        float: left;
+        width: 70%;
+      }
+      .popnav .middleicon {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        bottom: 0%;
+       
+        position: fixed;
+        cursor: pointer;
+        border-radius: 150px 150px 0 0;
+        width: 100px;
+        padding: 5px 5px;
+      }
+      .popnav .popnavtab .middle-content {
+        bottom: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        width: 200px;
+      }
+      .popnav .middleicon img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    

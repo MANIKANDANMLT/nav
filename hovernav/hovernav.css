@@ -1,0 +1,91 @@
+/* hover */
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --menubtncolor:bisque;
+    --menubtnborder:5px solid rgb(35, 35, 35);
+    --menucolor:#8003a300;
+    --menuhover:#474646;
+    --iconcolor:#3f997d;
+    --iconhover:#358068;
+    --fontcolor:black;
+    --fonthover:white;
+    --iconborder: 5px solid white;
+}
+.hoverbtn .hoverbtnicon {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 0%;
+    background-color: var(--menubtncolor);
+    width: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 0px 0px 40px;
+    border-top: var(--menubtnborder);
+    border-left: var(--menubtnborder);
+    border-bottom: var(--menubtnborder);
+    cursor: pointer;
+  }
+  .hoverbtn .hoverbtnicon img {
+    width: 20px;
+    height: 35px;
+    display: none;
+  } 
+  .hoverbtn .hoverbtntab .hoverbtn-content {
+    display: none;
+  }
+  
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 200px;
+    padding: 10px;
+  } 
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx {
+    background-color: var(--menucolor);
+    margin: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+  } 
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx:hover {
+    background-color: var(--menuhover);
+  }
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx a {
+    text-decoration: none;
+    color: var(--fontcolor);
+    display: flex;
+    align-items: center;
+  }
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx a:hover {
+    color: var(--fonthover);
+  }
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx a img {
+    margin-right: 30px;
+    padding: 10px;
+    background-color:var(--iconcolor);
+    border-radius: 50px;
+    border:var(--iconborder);
+  } 
+  .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages .imgbx a img:hover {
+    background-color: var(--iconhover);
+  }
+  @media screen and (max-width: 768px) {
+    .hoverbtn .hoverbtntab .hoverbtn-content .hoverbtnimages {
+      right: 10%;
+    }
+  }
+  

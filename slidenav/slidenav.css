@@ -1,0 +1,112 @@
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root{
+  --barbgcolor:red;
+  --slidebg:rgba(0, 0, 0, 0.9);
+  --fontcolor:#818181;
+  --fonthover:#f1f1f1;
+  --h:40px;
+  --w:50px;
+}
+.slide-nav .overlay {
+    position: fixed;
+    z-index: 1;
+    background-color: var(--slidebg);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .slide-nav .overlay-content {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .slide-nav .slidemenu {
+    cursor: pointer;
+    background-color:var(--barbgcolor);
+  }
+  
+  .slide-nav .slidemenu img {
+    width: var(--w);
+    height: var(--h);
+  }
+  
+  .slide-nav .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--fontcolor);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .slide-nav .overlay a:hover {
+    color: var(--fonthover);
+  }
+  
+  .slide-nav .closebtn {
+    position: absolute;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .slide-nav .overlay a { font-size: 20px; }
+    .slide-nav .closebtn { font-size: 40px; }
+  }
+  
+  /* Specific styles for each direction */
+  .slide-nav.top .overlay {
+    height: 0%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .slide-nav.top .closebtn {
+    top: 20px;
+    right: 45px;
+  }
+  
+  .slide-nav.bottom .overlay {
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .slide-nav.bottom .closebtn {
+    bottom: 20px;
+    right: 45px;
+  }
+  
+  .slide-nav.left .overlay {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .slide-nav.left .closebtn {
+    top: 20px;
+    right: 45px;
+  }
+  
+  .slide-nav.right .overlay {
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+  }
+  
+  .slide-nav.right .closebtn {
+    top: 20px;
+    left: 45px;
+  }
+  

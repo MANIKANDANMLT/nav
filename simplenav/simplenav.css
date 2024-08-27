@@ -1,0 +1,112 @@
+/* simple-nav */
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+  --msgcolor:rgb(16, 104, 25);
+  --msgfontcolor:white;
+  --fonthover:black;
+  --navbarcolor:rgb(210, 253, 182);
+  --navbarfontcolor:#111;
+  --navbarhovercolor:white;
+  --iconhovercolor:black;
+  --h:30px;
+  --w:30px;
+}
+.simple .uppersimple{
+    width: 100%;
+    height: 30px;
+    background-color: var(--msgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .simple .uppersimple p{
+    font-weight: 500;
+    color: var(--msgfontcolor);
+    padding: 2px;
+  }
+  .simple .lowersimple{
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbarcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+  }
+  .simple .lowersimple .linkitemsdl  p a{
+  text-decoration: none;
+  font-weight: 600;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: var(--navbarfontcolor);
+  }
+  .simple .lowersimple .linkitemsdl  p a:hover{
+    background-color: var(--navbarhovercolor);
+    color: var(--fonthover);
+    border-radius: 5px;
+  }
+  .simple .lowersimple .linkitemsdl{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .simple .lowersimple .linkitemsdl{
+    display: flex;
+  }
+  .simple .lowersimple .linkitemsdl  a{
+    display: flex;
+  }
+  .simple .lowersimple .iconsdl img{
+   width: 25px;
+   margin-left: 30px;
+   cursor: pointer;
+  }
+  .simple .lowersimple .iconsdl img:hover{
+    background-color: var(--iconhovercolor);
+    padding: 3px;
+    border-radius: 7px;
+   }
+  .simple .lowersimple .logodl img{
+    width: var(--w);
+    height: var(--h);  
+  }
+  @media (max-width: 768px) { 
+    .simple .lowersimple{
+      display: inline;
+      padding: 0%; 
+    }
+    .simple .lowersimple .linkitemsdl{
+      justify-content: space-evenly;
+      background-color: inherit;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+    }
+    .simple .lowersimple .logodl{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: inherit;
+      height: 50px; 
+    }
+    .simple .lowersimple .iconsdl {
+      justify-content: space-evenly;
+      background-color: inherit;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      text-align: center;
+    }
+    .simple .lowersimple .linkitemsdl  p a{
+      margin-left: -25px;
+    }
+  }
+  

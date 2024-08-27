@@ -1,0 +1,100 @@
+/*  NAV is a free and opensource web framework used to build easy navigation bars (navbars) in website and web-applications written in "css" and "javascript" as a HTML tags
+Designed and Developed with ❤ for the devlopers by MANIKANDAN SRINIVASALU ,co-developed by SNEHA.M */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+  --menucolor:#8103a3;
+  --fontcolor:black;
+  --fonthovercolor:black;
+  --h:30px;
+  --w:30px;
+}
+basic-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--menucolor);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+}
+
+basic-nav nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--fontcolor);
+}
+
+basic-nav nav a:hover {
+  color: var(--fonthovercolor);
+}
+
+basic-nav nav img {
+  width: var(--w);
+  height: var(--h);
+}
+
+basic-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+basic-nav nav ul a {
+  text-decoration: none;
+  color: var(--fontcolor);
+  font-size: 20px;
+}
+
+basic-nav nav .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hamburger-menu {
+  background-image: url('images/hamburger.png');
+}
+
+.exit-menu {
+  background-image: url('images/exit.png');
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  basic-nav nav ul {
+      margin-top: 0;
+      display: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: inherit;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  basic-nav nav ul.active {
+      display: flex;
+  }
+
+  basic-nav nav .hamburger {
+      display: flex;
+  }
+
+  basic-nav nav ul li {
+      text-align: center;
+  }
+}
