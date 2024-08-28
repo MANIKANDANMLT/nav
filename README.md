@@ -28,8 +28,8 @@ co-developed by [SNEHA.M](https://www.linkedin.com/in/m-sneha-57b284228/)
 ### CDN link
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basicnav/basicnav.css">
-<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basicnav/basicnav.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basic_nav/basicnav.css">
+<script src="https://cdn.jsdelivr.net/gh/MANIKANDANMLT/nav@main/basic_nav/basicnav.js" defer></script>
 ```
 <img src="sampleimages/basicnav.png">
 
